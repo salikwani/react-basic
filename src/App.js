@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutMe from "./components/AboutMe";
+import Navbar from "./components/Navbar";
+import Section from "./components/Section";
+import Footer from "./components/Foooter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    let sectionData = [
+        {
+            heading: "Skills",
+            description: "Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem odaor corlLorem ipsum odaor corl v Lorem ipsum odaor corlLorem ipsum odaor corl"
+        },
+        {
+            heading: "Qualifications",
+            description: "Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem odaor corlLorem ipsum odaor corl v Lorem ipsum odaor corlLorem ipsum odaor corl"
+        },
+        {
+            heading: "Projects",
+            description: "Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corlLorem ipsum odaor corlLorem ipsum odaor corlLorem Lorem ipsum odaor corl\
+            Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem ipsum odaor corl Lorem odaor corlLorem ipsum odaor corl v Lorem ipsum odaor corlLorem ipsum odaor corl"
+        }
+    ]
+
+    return (
+        <div>
+            <Navbar />
+            <AboutMe />
+            {sectionData.map((value)=> (
+                <Section heading={value.heading} description={value.description}/>
+            ))}
+            <Footer />
+        </div>
+    )
 }
 
 export default App;

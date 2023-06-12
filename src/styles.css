@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.navbar .menu a{
+    padding: 1rem;
+    color: white;
+}
+
+.aboutme h2 {
+    text-align: center;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.footer {
+    background-color: blue;
+    color: white;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer a {
+    padding: 1rem;
+    color: white;
+}
